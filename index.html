@@ -1,0 +1,512 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Young Reads">
+    <meta name="keywords" content="Young Reads, Young Reads Reading Campaign, Young Reads University of Malaya, young reads, young reads reading campaign, university of malaya reading campaign, malaysia reading campaign">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+    <title>Young Reads</title>
+    <style>
+#more0 {display: none;}
+</style>
+</head>
+
+<style>
+#more1 {display: none;}
+</style>
+
+<style>
+#more2 {display: none;}
+</style>
+
+<style>
+#more3 {display: none;}
+</style>
+
+<style>
+
+
+body {margin:0;height:auto}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.instagram {
+  background: #125688;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.whatsapp{
+  background: #a4c639;
+  color: white;
+}
+
+.content {
+  margin-left: 55px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.container {
+  z-index: 1;
+  perspective:3000px;
+}
+
+.container .book {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 550px;
+  margin: 5% auto;
+  border-radius: 2px 4px 4px 2px;
+  background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+  font-family: acumin-pro, sans-serif;
+  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+-moz-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+  font-weight: 400;
+  color: #2b2b2b;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .5s;
+  -moz-transition: -moz-transform .5s;
+  transition: transform .5s;
+}
+
+.container .book:hover {
+  -webkit-transform: rotate3d(0,1,0,35deg);
+  -moz-transform: rotate3d(0,1,0,35deg);
+  transform: rotate3d(0,1,0,35deg);
+}
+
+.container .book > div,
+.container .front > div {
+  display: block;
+  position: absolute;
+}
+
+
+.container .front {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform .5s;
+  -moz-transition: -moz-transform .5s;
+  transition: transform .5s;
+  -webkit-transform: translate3d(0,0,20px);
+  -moz-transform: translate3d(0,0,20px);
+  transform: translate3d(0,0,20px);
+  z-index: 10;
+}
+
+.container .front > div {
+  width: 400px;
+  height: 550px;
+}
+
+.container .left-side{
+  width: 40px;
+  left: -20px;
+  height: 550px;
+  background-color: rgba(232,229,234);
+  -webkit-transform: rotate3d(0,1,0,-90deg);
+  -moz-transform: rotate3d(0,1,0,-90deg);
+  transform: rotate3d(0,1,0,-90deg);
+}
+
+.cover svg{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -110px;
+  width: 300px;
+}
+
+#eye-right {
+  padding-left: 185px;
+}
+
+.cover .num-up{
+  position: absolute;
+  top: 64px;
+  left: 47px;
+  letter-spacing: 50px;
+  transform: rotate(-90deg);
+}
+
+.cover .num-down{
+  position: relative;
+  top: 65px;
+  left: -95px;
+  transform: rotate(-90deg);
+}
+
+.author{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 475px;
+  left: 50px;
+  opacity: .8;
+  }
+
+.container .front > div {
+  border-radius: 0 3px 3px 0;
+  box-shadow: 
+    inset 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .front:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: -1px;
+  width: 1px;
+}
+
+.container .cover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 3px;
+  background: rgba(0,0,0,0.1);
+  box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+
+.container h2 {
+  width: 500px;
+  height: 40px;
+  color: #2b2b2b;
+  font-size: 15px;
+  line-height: 40px;
+  padding-right: 10px;
+  text-align: right;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(90deg) translateY(-40px);
+  -moz-transform: rotate(90deg) translateY(-40px);
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.cover {
+ background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+}
+
+
+.left-side h2 span:first-child {
+  font-weight: 400;
+  font-size: 13px;
+  padding-right: 20px;
+}
+
+.left-side h2 span:last-child{
+  font-family: acumin-pro, sans-serif;
+} 
+
+</style>
+</head>
+
+<body>
+
+<!--Video-->
+<video autoplay muted loop id="myVideo">
+  <source src="/video2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+ <div class="icon-bar">
+  <a href="https://www.instagram.com/um.young.reads/" class="instagram"><i class="fa fa-instagram"></i></a> 
+  <a href="mailto:young.reads.university.malaya@gmail.com" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://wa.me/447700014010?text=I'm%20interested%20in%20Young%20Reads" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+</div>
+
+
+<div class="content">
+
+
+    <font size = "5" face="georgia" color="A7F432">
+      <h1 align="center">Young Reads</h1>
+    </font>
+    <hr style="border-top:8px dotted blue;background-color:yellow;width:100%;">
+
+
+<table>
+  <tr>
+    <th align="left"><u><font color="yellow" size="6">A Reading Campaign by:</font></u></th>
+   
+  </tr>
+  <tr>
+    <th><img src="/Young Reads Logo.png" alt="not found logo" height="150" width="150"></th>
+    <th><img src="/University-of-Malaya-Logo_neu030719.jpg" alt="not found um" height="130" width="220">
+      <br>
+      <a href="https://www.um.edu.my">University of Malaya</a>
+    </th>
+  </tr>
+  <tr>
+    <th align="left"><font color="yellow" size="6"><u>Collaborators:</font></u></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>
+      <img src="/francisco book.jpeg" alt="not found logo" height="150" width="150">
+     <br>
+     <a href="https://status.heroku.com">Francisco Bookstore</a>
+    </th>
+    <th> <img src="/cgs.png" alt="not found logo" height="130" width="220">
+      <br>
+      <a href="http://charismaglobal.sch.id/index.html">Charisma Global School</a>
+    </th>
+  </tr>
+</table>
+      <!--Audio-->
+  <i class="fa fa-music" style="font-size:48px;color:white"></i>
+<audio controls autoplay> 
+        <source src="/music.mp3" type="audio/mpeg"> 
+    </audio> 
+
+    <u><h2>Event Starts in: </h2></u>
+    <font size = "4" face="georgia" color="#A7F432">
+    <h1 id="demo" align="center"></h1>
+    <h2 align="center">Contact us now!!!</h2>
+    </font>
+
+    <!--flip-->
+    <div class="container">
+		<div class="book">
+			<div class="front">
+				<div class="cover">
+					<p class="num-up">84</p>	
+                    <svg 
+                       id="eye-left"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="75" 
+                       height="100" 
+                       version="1.0">
+                       <path d="m 72.520861,60.915859 v 0 C 69.385207,53.011396 61.908243,46.570093 55.74346,42.387465 49.578631,38.204905 40.408101,36.818968 33.679899,37.051071 c -1.597953,0.05517 -2.931531,0.451253 -4.000736,1.188245 -0.738155,0.570053 -1.097854,1.127016 -1.079089,1.670881 0.02949,0.854739 0.93486,2.69053 2.716108,5.507379 0.805175,1.372521 1.234574,2.83577 1.288193,4.389751 0.131362,3.807345 -0.983571,6.879734 -3.344801,9.217182 -2.361227,2.337476 -5.686459,3.580206 -9.975699,3.728183 C 15.162859,62.894893 11.580282,61.559887 8.5361375,58.747669 5.4920363,55.935482 3.8975877,52.431474 3.7527937,48.235627 c -0.1769131,-5.1282 2.0835359,-9.776522 6.7813483,-13.944986 4.697855,-4.168379 11.041643,-6.390426 19.031387,-6.666142 8.662566,-0.298838 16.811229,2.201105 24.446015,7.499833 7.634738,5.298806 13.804506,13.895976 18.509317,25.791527 z" id="text2161" fill="#000" fill-opacity="1" stroke="none" stroke-width=".72233355px" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1"/>
+                    </svg>
+                    <svg 
+                      id="eye-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="75" 
+                      height="100" 
+                      version="1.0">
+                      <path d="m 72.520861,60.915859 v 0 C 69.385207,53.011396 61.908243,46.570093 55.74346,42.387465 49.578631,38.204905 40.408101,36.818968 33.679899,37.051071 c -1.597953,0.05517 -2.931531,0.451253 -4.000736,1.188245 -0.738155,0.570053 -1.097854,1.127016 -1.079089,1.670881 0.02949,0.854739 0.93486,2.69053 2.716108,5.507379 0.805175,1.372521 1.234574,2.83577 1.288193,4.389751 0.131362,3.807345 -0.983571,6.879734 -3.344801,9.217182 -2.361227,2.337476 -5.686459,3.580206 -9.975699,3.728183 C 15.162859,62.894893 11.580282,61.559887 8.5361375,58.747669 5.4920363,55.935482 3.8975877,52.431474 3.7527937,48.235627 c -0.1769131,-5.1282 2.0835359,-9.776522 6.7813483,-13.944986 4.697855,-4.168379 11.041643,-6.390426 19.031387,-6.666142 8.662566,-0.298838 16.811229,2.201105 24.446015,7.499833 7.634738,5.298806 13.804506,13.895976 18.509317,25.791527 z" id="text2161" fill="#000" fill-opacity="1" stroke="none" stroke-width=".72233355px" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1"/>
+                    </svg>
+                    <p class="num-down">1</p>
+                    <p class=author>Young Reads</p>
+				</div>
+			</div>
+			<div class="left-side">
+				<h2>
+					<span>Young Reads </span>
+					<span>1984</span>
+				</h2>
+			</div>
+		</div>
+	</div>
+
+    <u><h2>About Us:</h2></u>
+
+    <font size = "4" face="georgia" color="#A7F432"><p>
+<span id="dots2">...</span><span id="more2"><img src="/poster.jpeg" alt="poster not found" height="500" width="300"><br><br>
+  We are undergraduate students from University Malaya, 
+    and are currently assigned a SULAM project under Thinking and Communication Skills (WIX2001).
+    Our project is Young Reads, where we will work with primary schools and hold story reading sessions 
+    for their pupils. Furthermore, we would like to seek for 
+    collaborators from the corporate world to bring this project to greater heights. Our objectives are: <br><br>
+-To increase awareness of the importance of making reading as a habit among primary school students. <br><br>
+-To provide training for students with the skill of summarizing and/or writing reflections based on text material.</p></font>
+<button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+
+<u><h2>Planned Activities:</h2></u>
+
+
+<font size = "4" face="georgia" color="#A7F432"><p> The following is our planned activities: <br><br>
+<span id="dots0">...</span><span id="more0"><img src="/planned activities.png" alt="poster not found" height="500" width="300"></span></p></font>
+<button onclick="myFunction0()" id="myBtn0">Read more</button>
+
+
+
+<u><h2>A Letter for Our Collaborators:</h2></u>
+<font size = "4" face="georgia" color="#A7F432"><p>Dear Sir / Madam,
+<span id="dots1">...</span><span id="more1"><br><br>
+We are second year undergraduate students from University Malaya. We are currently undertaking 
+Thinking and Communication Skills (WIX2001) course this semester and the course requires us to conduct a 
+Service-Learning Malaysia (SULAM) project. <br><br> Our project is a reading campaign called ‘Young Reads’. We proudly to invite your students in our 
+    upcoming event. Our project is Young Reads, where we will work together with the students and hold story reading sessions, do a summary
+     writing session and impromptu story telling competition. <br><br>
+     A few words about our project: We realized that COVID-19 on top of digital normalization has made the 
+     current generation almost devoid of books and text material, as they spend most of their time on 
+     social media or games. Besides the latter software undoubtedly providing better stimuli and 
+     enjoyment to their users compared to books, the absence of face-to-face education further 
+     diminishes the presence of books in the lives of children today. Therefore, Young Reads aims to 
+     rekindle the interest of reading in children by going out of our way in this busy university life 
+     to read meaningful stories to them. Moreover, we hope to improve the reading, listening, 
+     and thinking skills of the students through this event. <br><br>
+     Having that said, we would like to humbly request for your support as we organise this event. 
+     We are plainly undergraduates, but with your assistance, the odds of achieving wonders might not 
+     be that feeble after all. <br><br>
+     Quoting the words from King Solomon, the wisest king that ever lived, 
+     "Train up a child in the way he should go, and when he is old, he will not depart from it".
+      We believe there is a necessity to instil the habit of reading in children of this generation, 
+      and we want to contribute to this necessity as much as we can. Your reply is much anticipated, 
+      thank you for reading this message.</span></p></font>
+<button onclick="myFunction1()" id="myBtn1">Read more</button>
+
+
+<br><br><br>
+
+</div>
+
+    <script>
+function myFunction0() {
+  var dots = document.getElementById("dots0");
+  var moreText = document.getElementById("more0");
+  var btnText = document.getElementById("myBtn0");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+    <script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+  <script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script>
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>
